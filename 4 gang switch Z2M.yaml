@@ -88,7 +88,6 @@ max_exceeded: silent
 trigger:
 - platform: state
   entity_id: !input "switch"
-  attribute: action
   to: null
   from: null
 action:
