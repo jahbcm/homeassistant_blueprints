@@ -89,6 +89,8 @@ trigger:
 - platform: state
   entity_id: !input "switch"
   attribute: action
+  to: null
+  from: null
 action:
 - variables:
     command: "{{ trigger.from_state.state }}"
