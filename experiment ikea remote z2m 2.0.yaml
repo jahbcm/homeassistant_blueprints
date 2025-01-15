@@ -347,9 +347,8 @@ variables:
   # integrations which need to store the previous press event to determine which button was released
   integrations_with_prev_event_storage: [zha, zigbee2mqtt]
   # build data to send within a controller event
-  controller_entity: !input controller_entity
   controller_device: !input controller_device
-  controller_id: '{% if integration_id=="zigbee2mqtt" %}{{controller_entity}}{% else %}{{controller_device}}{% endif %}'
+  controller_id: controller_device
 mode: restart
 max_exceeded: silent
 trigger:
