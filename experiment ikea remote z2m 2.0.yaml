@@ -345,7 +345,7 @@ variables:
   button_down_long: '{{ actions_mapping[integration_id]["button_down_long"] }}'
   button_down_release: '{{ actions_mapping[integration_id]["button_down_release"] }}'
   # integrations which need to store the previous press event to determine which button was released
-  integrations_with_prev_event_storage: [zha, zigbee2mqtt]
+  integrations_with_prev_event_storage: [zha]
   # build data to send within a controller event
   controller_device: !input controller_device
   controller_id: controller_device
